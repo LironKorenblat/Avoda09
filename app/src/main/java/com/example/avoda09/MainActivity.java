@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     public void clicked(View view) {
         String st = etn.getText().toString();
         int num = Integer.parseInt(st);
-
+        if(num % 7 != 0){
+            btn.setText("the number " + num + " is not a multiple of 7 number: ");
+        }
+        else{
+            btn.setText("BOOM!");
+        }
     }
 }
